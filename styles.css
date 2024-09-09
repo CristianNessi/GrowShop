@@ -1,0 +1,487 @@
+       /* Estilos adicionales de la página */
+       body {
+           background-color: #111;
+           /* Negro profundo para el fondo */
+           color: #fff;
+           /* Texto en blanco para contraste */
+           font-family: 'Roboto', sans-serif;
+           /* Fuente moderna y limpia */
+           margin: 0;
+           padding: 0;
+       }
+
+       header {
+           background-color: #2c3e50;
+           color: white;
+           padding: 1.5rem;
+           text-align: center;
+       }
+
+       nav {
+           font-size: 20px;
+           background-color: #000;
+           border-bottom: 2px solid #39ff14;
+           padding: 20px;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+       }
+
+       nav a {
+           color: #39ff14;
+           /* Links del nav en verde neón */
+           margin: 0 15px;
+           text-decoration: none;
+           font-weight: bold;
+       }
+
+       nav a:hover {
+           text-shadow: 0 0 5px #39ff14;
+           /* Efecto de brillo al pasar el mouse */
+       }
+
+       main {
+           width: 80%;
+           float: right;
+           box-sizing: border-box;
+           padding: 1rem;
+           overflow-x: hidden;
+       }
+
+       /* Swiper styles */
+       .category-carousel {
+           display: none;
+       }
+
+       .category-carousel.active {
+           display: block;
+       }
+
+       .carousel-item {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-between;
+           padding: 20px;
+           background-color: #ecf0f1;
+           border-radius: 15px;
+           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+           height: 100%;
+       }
+
+       .carousel-item img {
+           width: 100%;
+           max-width: 400px;
+           /* Ajustar el ancho máximo de la imagen */
+           height: auto;
+           border-radius: 10px;
+           object-fit: cover;
+           margin-bottom: 1rem;
+           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+       }
+
+       /* Estilo para el texto */
+       .carousel-item .text {
+           width: 100%;
+           /* El texto ocupa el 55% del contenedor */
+           text-align: center;
+       }
+
+       .carousel-item h3 {
+           color: #27ae60;
+           margin-bottom: 1rem;
+           font-size: 1.8rem;
+       }
+
+       .carousel-item p {
+           margin: 0.5rem 0;
+           font-size: 1.1rem;
+           color: #333;
+       }
+
+       .carousel-item .product-price {
+           font-size: 1.3rem;
+           font-weight: bold;
+           color: #27ae60;
+       }
+
+       .category-button {
+           background-color: #222;
+           /* Botones en negro con borde verde neón */
+           color: #39ff14;
+           border: 2px solid #39ff14;
+           padding: 10px 20px;
+           margin: 10px;
+           text-transform: uppercase;
+           font-weight: bold;
+           cursor: pointer;
+           transition: background-color 0.3s, color 0.3s;
+       }
+
+       .category-button:hover {
+           background-color: #39ff14;
+           color: #111;
+           /* Invertir colores al pasar el mouse */
+       }
+
+       .swiper-container {
+           width: 80%;
+           max-width: 800px;
+           height: auto;
+           margin: 0 auto;
+       }
+
+
+       .swiper-slide {
+           background-color: rgba(0, 0, 0, 0.8);
+           width: 300px;
+           /* Ajusta el ancho del slide */
+           height: 400px;
+           /* Ajusta la altura del slide */
+           border-radius: 10px;
+           border: 2px solid #39ff14;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           box-shadow: 0 0 10px #39ff14;
+       }
+
+       /* Swiper cube effect specific styles */
+       .swiper-slide {
+           background: #000;
+       }
+
+       .swiper-slide-shadow {
+           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+       }
+
+       .swiper-cube-shadow {
+           box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.5);
+       }
+
+       .swiper-pagination-bullet {
+           background: #39ff14;
+       }
+
+       .swiper-button-next,
+       .swiper-button-prev {
+           color: #39ff14;
+       }
+
+       .active {
+           display: block;
+           /* Para mostrar el carrusel activo */
+       }
+
+       aside {
+           background-color: #111;
+           /* Fondo negro */
+           color: #fff;
+           /* Texto blanco */
+           border-left: 2px solid #39ff14;
+           /* Borde izquierdo en verde neón */
+           padding: 20px;
+           box-shadow: -3px 0 10px rgba(0, 255, 0, 0.5);
+           /* Sombra verde */
+           width: 20%;
+           /* Fijado en el lateral izquierdo */
+           float: left;
+           box-sizing: border-box;
+           height: 100%;
+           overflow-y: auto;
+       }
+
+       aside h2 {
+           color: #2c3e50;
+           margin-bottom: 1rem;
+       }
+
+       aside ul {
+           list-style-type: none;
+           padding: 0;
+       }
+
+       aside ul li {
+           margin: 15px 0;
+       }
+
+       aside li {
+           margin-bottom: 1rem;
+           font-size: 1.1rem;
+           cursor: pointer;
+           color: #2c3e50;
+       }
+
+       aside li:hover {
+           color: #27ae60;
+       }
+
+       aside ul li a {
+           color: #39ff14;
+           /* Enlaces del aside en verde */
+           text-decoration: none;
+       }
+
+       aside ul li a:hover {
+           text-shadow: 0 0 5px #39ff14;
+           /* Efecto de brillo en hover */
+       }
+
+       /* Tipografía verde neón en títulos */
+       h1,
+       h2,
+       h3 {
+           color: #39ff14;
+           /* Titulares principales en verde neón */
+           text-shadow: 0 0 10px #39ff14;
+           /* Efecto de brillo */
+       }
+
+
+       footer {
+           clear: both;
+           background-color: #2c3e50;
+           color: white;
+           text-align: center;
+           padding: 1.5rem;
+           margin-top: 2rem;
+       }
+
+       /* Sección de productos con Atropos */
+       .products {
+           display: flex;
+           justify-content: space-around;
+           margin-top: 3rem;
+       }
+
+       .product {
+           background-color: #ecf0f1;
+           padding: 1.5rem;
+           width: 30%;
+           margin: 1rem;
+           border-radius: 10px;
+           transition: transform 0.3s ease-in-out;
+           position: relative;
+           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+       }
+
+       .product h3 {
+           text-align: center;
+           color: #27ae60;
+           margin-bottom: 1rem;
+       }
+
+       .product-details {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.7);
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           opacity: 0;
+           transition: opacity 0.3s ease-in-out;
+           text-align: center;
+           padding: 1rem;
+       }
+
+       .product:hover .product-details {
+           opacity: 1;
+       }
+
+       /* Estilos de botones generales */
+       button {
+           background-color: #39ff14;
+           border: none;
+           color: #111;
+           padding: 10px 20px;
+           text-transform: uppercase;
+           font-weight: bold;
+           cursor: pointer;
+           transition: background-color 0.3s, color 0.3s;
+       }
+
+       button:hover {
+           background-color: #fff;
+           color: #39ff14;
+           /* Cambia los colores al pasar el mouse */
+       }
+
+       /* Estilo para el botón flotante de WhatsApp */
+       .whatsapp-float {
+           position: fixed;
+           bottom: 20px;
+           /* Distancia desde la parte inferior */
+           left: 20px;
+           /* Distancia desde la parte izquierda */
+           z-index: 100;
+           /* Asegura que esté por encima de otros elementos */
+       }
+
+       .whatsapp-float img {
+           width: 60px;
+           /* Tamaño del icono */
+           height: 60px;
+       }
+
+       /* Estilos del Modal */
+       .modal {
+           display: none;
+           position: fixed;
+           z-index: 1;
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           overflow: auto;
+           background-color: rgba(0, 0, 0, 0.4);
+           /* Fondo oscuro con transparencia */
+       }
+
+       .modal-content {
+           background-color: #fefefe;
+           margin: 10% auto;
+           padding: 20px;
+           border: 1px solid #888;
+           width: 80%;
+           max-width: 500px;
+           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+       }
+
+       .close {
+           color: #aaa;
+           float: right;
+           font-size: 28px;
+           font-weight: bold;
+       }
+
+       .close:hover,
+       .close:focus {
+           color: black;
+           text-decoration: none;
+           cursor: pointer;
+       }
+
+       form label {
+           display: block;
+           margin-bottom: 8px;
+       }
+
+       form input,
+       form textarea {
+           width: 100%;
+           padding: 10px;
+           margin-bottom: 15px;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+           box-sizing: border-box;
+       }
+
+       form button {
+           background-color: #4CAF50;
+           color: white;
+           padding: 10px 15px;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+       }
+
+       form button:hover {
+           background-color: #45a049;
+       }
+
+       /* Estilos para el modal */
+       .modal {
+           display: none;
+           /* Ocultar el modal por defecto */
+           position: fixed;
+           z-index: 1;
+           /* Asegurarse de que el modal esté sobre otros elementos */
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           overflow: auto;
+           /* Agregar scroll si el contenido es grande */
+           background-color: rgba(0, 0, 0, 0.7);
+           /* Fondo oscuro con algo de transparencia */
+       }
+
+       /* Estilos del contenido del modal */
+       .modal-content {
+           background-color: #1e1e1e;
+           /* Fondo oscuro del modal */
+           margin: 5% auto;
+           /* Centro del modal */
+           padding: 20px;
+           border: 1px solid #333;
+           border-radius: 8px;
+           width: 80%;
+           /* Ancho del modal */
+           max-width: 600px;
+           /* Máximo ancho del modal */
+           color: #fff;
+           /* Texto blanco */
+           box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+           /* Efecto de neón */
+       }
+
+       /* Estilo del botón de cerrar */
+       .close {
+           color: #0ff;
+           /* Color neón para el botón de cerrar */
+           float: right;
+           font-size: 28px;
+           font-weight: bold;
+           cursor: pointer;
+       }
+
+       .close:hover,
+       .close:focus {
+           color: #0ff;
+           text-decoration: none;
+           outline: none;
+       }
+
+       /* Estilo del formulario */
+       .form-group {
+           margin-bottom: 15px;
+       }
+
+       .form-group label {
+           display: block;
+           margin-bottom: 5px;
+           color: #0ff;
+           /* Color neón para las etiquetas */
+       }
+
+       .form-group input,
+       .form-group select {
+           width: 100%;
+           padding: 10px;
+           border: 1px solid #333;
+           border-radius: 4px;
+           background-color: #2a2a2a;
+           color: #fff;
+       }
+
+       button[type="submit"] {
+           background-color: #0ff;
+           /* Color de fondo neón */
+           color: #000;
+           /* Texto negro */
+           padding: 10px 20px;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+           box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+           /* Efecto de neón para el botón */
+       }
+
+       button[type="submit"]:hover {
+           background-color: #0cc;
+           /* Color de fondo más oscuro al pasar el ratón */
+       }
