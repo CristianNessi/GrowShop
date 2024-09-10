@@ -694,7 +694,6 @@
            }
 
            .add-to-cart {
-
                font-size: 8px;
                padding: 7px 15px;
                margin: 3px;
@@ -702,12 +701,11 @@
            }
 
            .products {
-               flex-direction: column;
                align-items: center;
            }
 
            .product {
-               margin: 1rem 0;
+               margin: 1rem 0.5rem;
                padding: 1rem;
                box-shadow: none;
                border-radius: 5px;
